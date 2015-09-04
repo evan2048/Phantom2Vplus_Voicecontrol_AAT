@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Application -->
+    <string name="app_name">Phantom语音控制</string>
+    <string name="hello_world">欢迎!</string>
+    <string name="action_settings">Settings</string>
+    <!-- OSD信息 -->
+    <string name="commonMessageString">一般消息:</string>
+    <string name="speechCommandString">语音命令:</string>
+    <string name="connectedWifiSSIDString">当前连接Wifi:</string>
+    <string name="remainPowerPercentString">电量:</string>
+    <string name="satelliteCountString">卫星数:</string>
+    <string name="distanceString">距离:</string>
+    <string name="altitudeString">高度:</string>
+    <string name="speedString">速度:</string>
+    <!-- 预览画质 -->
+    <string name="cameraPreviewResolustionTypeString">预览画质:</string>
+    <string name="resolution_type_320x240_15fpsString">320x240_15fps</string>
+    <string name="resolution_type_320x240_30fpsString">320x240_30fps</string>
+    <string name="resolution_type_640x480_15fpsString">640x480_15fps</string>
+    <string name="resolution_type_640x480_30fpsString">640x480_30fps</string>
+    <!-- 开发者信息 -->
+    <string name="developerNameString">Develop by evan2048</string>
+    <string name="developerEmailString">gch163mail@163.com</string>
+    <!-- 对话框 -->
+    <string name="alertString">提示</string>
+    <string name="warningString">警告</string>
+    <string name="confirmString">确定</string>
+    <string name="cancelString">取消</string>
+    <string name="speechEngineInstallMessageString">请安装语音识别服务.</string>
+    <!-- 命令词 -->
+    <string name="success">成功</string>
+    <string name="failed">失败</string>
+    <string name="cancel">取消</string>
+    <string name="takePhoto">拍照</string>
+    <string name="startRecordingVideo">开始录像</string>
+    <string name="stopRecordingVideo">停止录像</string>
+    <string name="battery">电池电量</string>
+    <!-- 一般信息 -->
+    <string name="gimbalError">警告！云台异常</string>
+    <string name="mcError">警告！主控错误！！！</string>
+    <string name="loseCameraConnection">警告！与相机失去连接</string>
+    <string name="djiSdkActivateError">DJI SDK激活失败，请确保手机已接入互联网</string>
+    <!-- 语音信息 -->
+    <string name="voice">语音:</string>
+    <string name="gimbalAngleHorizontal">镜头平视</string>
+    <string name="gimbalAngleVertical">镜头俯视</string>
+    <string name="gimbalAngleUp">镜头上移</string>
+    <string name="gimbalAngleDown">镜头下移</string>
+    <string name="gimbalAngle">镜头角度</string>
+    <string name="gimbalAngleUnit">度</string>
+    <string name="recognizeResultEmptyString">无法获取识别结果，请确保语音引擎配置正确</string>
+    <string name="lowThan">低于</string>
+    <string name="speechPause">:</string>
+    <!-- wifi -->
+    <string name="wifiClosed">Wifi已关闭</string>
+    <string name="wifiOpendButNoConnection">Wifi未连接</string>
+    <string name="pleaseConnectToPhantom">请将Wifi连接至Phantom</string>
+    <string name="wifiScanning">Wifi扫描中....</string>
+    <string name="cameraConnecting">相机连接中....</string>
+    <string name="wifiConnected">Wifi已连接:</string>
+    <!-- 设置界面 -->
+    <string name="speechConfidenceBoundaryString">语音识别灵敏度:</string>
+    <string name="fpvModeString">FPV模式</string>
+    <string name="threeDGlassModeString">3D眼镜模式</string>
+    <string name="resetToDefaultSettingString">恢复默认设置</string>
+    <string name="speechHelpString">语音命令:\n拍照\n开始录像\n停止录像\n镜头平视\n镜头俯视\n镜头上移\n镜头下移\n镜头角度xx度(0~90)\n电池电量</string>
+    <!-- SpeechEngineApkInstaller -->
+    <string name="extractingSpeechEngineAPK">正在提取语音引擎安装包....</string>
+    <string name="extractingSpeechEngineAPKSuccess">提取语音引擎安装包成功</string>
+    <string name="extractingSpeechEngineAPKFailed">提取语音引擎安装包失败</string>
+    <!-- Toast message -->
+    <string name="pressAgainExitString">再按一次退出程序</string>
+    <string name="speechServiceNotInstall">语音服务未安装</string>
+    <!-- bluetooth -->
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+</resources>

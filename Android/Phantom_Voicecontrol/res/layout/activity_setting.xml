@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true" >
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="60dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/back_button_normal"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/cameraPreviewResolustionTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/backButton"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/cameraPreviewResolustionTypeString" />
+
+    <RadioGroup
+        android:id="@+id/cameraPreviewResolustionTypeRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cameraPreviewResolustionTypeTextView"
+        android:layout_marginTop="5dp" >
+
+        <RadioButton
+            android:id="@+id/resolution_type_320x240_15fpsRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/resolution_type_320x240_15fpsString" />
+
+        <RadioButton
+            android:id="@+id/resolution_type_320x240_30fpsRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resolution_type_320x240_30fpsString" />
+
+        <RadioButton
+            android:id="@+id/resolution_type_640x480_15fpsRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resolution_type_640x480_15fpsString" />
+
+        <RadioButton
+            android:id="@+id/resolution_type_640x480_30fpsRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resolution_type_640x480_30fpsString" />
+    </RadioGroup>
+
+    <SeekBar
+        android:id="@+id/speechConfidenceBoundarySeekBar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/speechConfidenceBoundaryTextView"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/cameraPreviewResolustionTypeRadioGroup" />
+
+    <TextView
+        android:id="@+id/speechConfidenceBoundaryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backButton"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/cameraPreviewResolustionTypeRadioGroup"
+        android:text="@string/speechConfidenceBoundaryString" />
+
+    <Button
+        android:id="@+id/resetToDefaultSettingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/developerEmail"
+        android:layout_alignParentRight="true"
+        android:text="@string/resetToDefaultSettingString" />
+
+    <TextView
+        android:id="@+id/developerEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/developerEmailString" />
+
+    <TextView
+        android:id="@+id/speechHelpTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backButton"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/speechConfidenceBoundarySeekBar"
+        android:text="@string/speechHelpString" />
+
+    <CheckBox
+        android:id="@+id/fpvModeCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/speechConfidenceBoundaryTextView"
+        android:layout_below="@+id/speechConfidenceBoundarySeekBar"
+        android:layout_marginTop="15dp"
+        android:text="@string/fpvModeString" />
+
+    <CheckBox
+        android:id="@+id/threeDGlassModeCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fpvModeCheckBox"
+        android:layout_below="@+id/fpvModeCheckBox"
+        android:layout_marginTop="10dp"
+        android:text="@string/threeDGlassModeString" />
+
+</RelativeLayout>

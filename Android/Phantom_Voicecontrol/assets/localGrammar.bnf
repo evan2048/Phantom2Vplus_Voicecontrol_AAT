@@ -1,0 +1,12 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar localGrammar;
+!slot <cmdOnly>;
+!slot <cmdNeedValue>;
+!slot <value>;
+!slot <unit>;
+!start <cmdStart>;
+<cmdStart>:<cmdOnly>|<cmdNeedValue><value>[<unit>];
+<cmdOnly>:拍照|开始录像|停止录像|镜头平视|镜头俯视|镜头上移|镜头下移|电池电量;
+<cmdNeedValue>:镜头角度;
+<value>:零|十|二十|三十|四十|五十|六十|七十|八十|九十;
+<unit>:度;

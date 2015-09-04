@@ -1,0 +1,200 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:keepScreenOn="true"
+    tools:context="com.evan2048.phantom_voicecontrol.MainActivity" >
+
+    <dji.sdk.widget.DjiGLSurfaceView
+        android:id="@+id/DjiSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/speechButton"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/mic_off" />
+
+    <Button
+        android:id="@+id/settingButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/setting" />
+
+    <Button
+        android:id="@+id/wifiButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@+id/settingButton"
+        android:background="@drawable/wifi_off" />
+
+    <Button
+        android:id="@+id/bluetoothButton"
+        android:layout_width="30dp"
+        android:layout_height="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@+id/wifiButton"
+        android:background="@drawable/bluetooth_off" />
+
+    <TextView
+        android:id="@+id/speedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/takePhotoButton"
+        android:text="@string/speedString"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/altitudeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/speedTextView"
+        android:text="@string/altitudeString"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/distanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/altitudeTextView"
+        android:text="@string/distanceString"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/satelliteCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/distanceTextView"
+        android:text="@string/satelliteCountString"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/remainPowerPercentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/satelliteCountTextView"
+        android:text="@string/remainPowerPercentString"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/gimbalPitchPlusButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/array_up_hole"
+        android:text="" />
+
+    <Button
+        android:id="@+id/gimbalPitchMinusButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/array_down_hole"
+        android:text="" />
+
+    <Button
+        android:id="@+id/takePhotoButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/recordingVideoButton"
+        android:background="@drawable/camera_gray"
+        android:text="" />
+
+    <Button
+        android:id="@+id/recordingVideoButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/speechButton"
+        android:background="@drawable/video_gray"
+        android:text="" />
+
+    <LinearLayout
+        android:id="@+id/centerLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/connectedWifiSSIDTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/connectedWifiSSIDString"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/start_gray" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/speechCommandTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settingButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/speechCommandString"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/commonMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/speechCommandTextView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="@string/commonMessageString"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
